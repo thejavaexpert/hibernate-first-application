@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tje.hibernate.tutorial.model">
+    <class name="Student" table="student">
+		<id name="id" column="student_seqno">
+            <generator class="increment"/>
+        </id>
+        <property name="name" column="student_name"/>
+        <property name="age" column="student_age"/>
+        <property name="standard" column="student_standard"/>
+    </class>
+</hibernate-mapping>
